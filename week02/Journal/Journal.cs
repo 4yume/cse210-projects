@@ -13,9 +13,13 @@ public class Jornal
 
     public void DisplayAll()
     {
+        int entryNumber = 1;
+
         foreach (Entry entry in _entries)
         {
+            Console.WriteLine($"Entry {entryNumber}");
             entry.Display();
+            entryNumber++;
         }
     }
 

@@ -1,3 +1,5 @@
+//Add entry number when display the all Entry
+
 using System;
 
 class Program

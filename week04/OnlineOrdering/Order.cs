@@ -41,9 +41,13 @@ public class Order
     {
         string label = "Packing Label: ";
 
-        foreach (Product product in _products)
+        for (int i = 0; i < _products.Count; i++)
         {
-            label += $"{product.GetName()} - {product.GetProductId()}\t";
+            label += $"{_products[i].GetName()} - {_products[i].GetProductId()}";
+            if (i < _products.Count - 1)
+            {
+                label += ",";
+            }
         }
         return label;
     }

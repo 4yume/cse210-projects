@@ -10,10 +10,10 @@ class Program
         Customer customer1 = new Customer("Mike", address1);
         Customer customer2 = new Customer("Sakura", address2);
 
-        Product product1 = new Product("apple", "1323", 1.2, 5);
-        Product product2 = new Product("orange", "1262", 3.1, 2);
+        Product product1 = new Product("Apple", "1323", 1.2, 5);
+        Product product2 = new Product("Orange", "1262", 3.1, 2);
         Product product3 = new Product("Shoes", "5325", 50.24, 1);
-        Product product4 = new Product("socks", "6194", 5.61, 5);
+        Product product4 = new Product("Socks", "6194", 5.61, 5);
 
         Order order1 = new Order(customer1);
         Order order2 = new Order(customer2);

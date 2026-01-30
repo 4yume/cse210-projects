@@ -46,7 +46,7 @@ public class Order
             label += $"{_products[i].GetName()} - {_products[i].GetProductId()}";
             if (i < _products.Count - 1)
             {
-                label += ",";
+                label += ", ";
             }
         }
         return label;

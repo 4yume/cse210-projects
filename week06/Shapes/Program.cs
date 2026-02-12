@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 class Program
 {
@@ -27,7 +28,7 @@ class Program
             string color = shape.GetColor();
             double area = shape.GetArea();
 
-            Console.WriteLine($"Color: {color}\n Area: {area}");
+            Console.WriteLine($"Color: {color}\n Area: {area:F2}");
         }
     }
 }

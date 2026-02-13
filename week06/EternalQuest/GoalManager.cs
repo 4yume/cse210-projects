@@ -1,3 +1,5 @@
+//adding creativity as level up system
+
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -28,7 +30,7 @@ public class GoalManager
             Console.WriteLine("\t5. Record Event");
             Console.WriteLine("\t6. Quit");
             Console.Write("Select a choice from the menu: ");
-            string answer = Console.ReadLine(); 
+            string answer = Console.ReadLine();
 
             if (answer == "1")
             {
@@ -61,9 +63,32 @@ public class GoalManager
         }
     }
 
+
+    //level up system
+    private string GetLevel()
+    {
+        if (_score >= 1500)
+        {
+            return "Master";
+        }
+        else if (_score >= 1000)
+        {
+            return "Expert";
+        }
+        else if (_score >= 500)
+        {
+            return "Adept";
+        }
+        else
+        {
+            return "Novice";
+        }
+    }
+
     public void DisplayPlayerInfo()
     {
-        Console.WriteLine($"You have {_score} points.");
+        string level = GetLevel();
+        Console.WriteLine($"You have {_score} points. Level: {level}");
     }
 
     public void ListGoalNames()
